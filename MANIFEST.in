@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include nodux_sale_one *.css
+recursive-include nodux_sale_one *.csv
+recursive-include nodux_sale_one *.html
+recursive-include nodux_sale_one *.ico
+recursive-include nodux_sale_one *.js
+recursive-include nodux_sale_one *.json
+recursive-include nodux_sale_one *.md
+recursive-include nodux_sale_one *.png
+recursive-include nodux_sale_one *.py
+recursive-include nodux_sale_one *.svg
+recursive-include nodux_sale_one *.txt
+recursive-exclude nodux_sale_one *.pyc
