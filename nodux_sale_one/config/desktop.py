@@ -9,11 +9,11 @@ def get_data():
 			"color": "red",
 			"icon": "octicon octicon-file-directory",
 			"type": "module",
-			"label": _("Nodux Sale One")
+			"hidden": 1
 		},
 
 		{
-			"module_name": "Nodux Sale One",
+			"module_name": "Sale",
 			"_doctype": "Sales Invoice One",
 			"color": "#f39c12",
 			"icon": "octicon octicon-package",

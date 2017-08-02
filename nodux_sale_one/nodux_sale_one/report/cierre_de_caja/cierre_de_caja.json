@@ -8,12 +8,17 @@
  "idx": 0, 
  "is_standard": "Yes", 
  "letter_head": "", 
- "modified": "2017-07-24 11:38:49.411402", 
+ "modified": "2017-08-02 16:03:35.673707", 
  "modified_by": "Administrator", 
  "module": "Nodux Sale One", 
  "name": "Cierre de Caja", 
  "owner": "Administrator", 
  "ref_doctype": "Sales Invoice One", 
  "report_name": "Cierre de Caja", 
- "report_type": "Script Report"
+ "report_type": "Script Report", 
+ "roles": [
+  {
+   "role": "Nodux One"
+  }
+ ]
 }
