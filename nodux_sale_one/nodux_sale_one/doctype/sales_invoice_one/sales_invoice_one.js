@@ -91,7 +91,19 @@ frappe.ui.form.on('Sales Invoice One', {
 					options:"Customer", reqd: 1, label:"Customer", "default":frm.doc.customer_name},
 				{"fieldname":"total", "fieldtype":"Currency", "label":__("Total Amount"),
 					label:"Total Amount", "default":frm.doc.residual_amount},
+				{"fieldname":"section_break","fieldtype":"Section Break"},
+				{"fieldname":"recibo", "fieldtype":"Currency", "label":__("RECIBIDO"),
+					label:"RECIBIDO", "default":frm.doc.residual_amount},
+					{"fieldname":"coulmn_break_2","fieldtype":"Column Break"},
+				{"fieldname":"cambio", "fieldtype":"Read Only", "label":__("CAMBIO"),
+						label:"CAMBIO", "default":0},
+				{"fieldname":"section_break","fieldtype":"Section Break"},
 				{fieldname:"pay", "label":__("Pay"), "fieldtype":"Button"}]
+		});
+
+		d.get_input("recibo").on("change", function() {
+			var values = d.get_values();
+			d.set_value("cambio", flt(values["recibo"] - frm.doc.residual_amount))
 		});
 
 		d.get_input("pay").on("click", function() {
